@@ -43,4 +43,13 @@ function pageTransitions(){
     })
 }
 
+// //Send Email Info
+// function sendEmail(name, email, message){
+//     email.send({
+//         Host:"smtp.gmail.com"
+//         Username:''
+        
+//     })
+// }
+
 pageTransitions();
