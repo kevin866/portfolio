@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Wang's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 1rem;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #555f56;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        nav a {
+            margin: 1rem;
+            text-decoration: none;
+            color: #1e211e;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            padding: 1rem;
+            color: #0f120f;
+        }
+        .project {
+            margin-bottom: 2rem;
+        }
+        .project-title {
+            padding: 1rem;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            /* padding: 0.3rem; */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .image-container {
+            text-align: center; 
+        }
+        img.ori {
+            width: 80%; 
+            height: auto; 
+            padding: 1rem;
+        }
+        img {
+            width: 50%; 
+            height: auto; 
+            padding: 1rem;
+        }
+        .centered-link {
+            text-align: center; /* Centers the content horizontally */
+        }
+        p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kevin Wang's Portfolio</h1>
+        <p>Showcasing my projects and skills in robotics, mechanical engineering, and more.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container" id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm Kevin Wang, a mechanical engineering graduate currently pursuing a master's in robotics at Santa Clara University. 
+            I have experience in robotics, programming, control systems, and mechanical engineering, specifically 3D printing for rapid 
+            prototyping. I love building projects and enjoy solving real-world problems using cutting-edge technologies.
+        </p>
+    </div>
+
+    <div class="container" id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <div class="project-title">Waypoint Profiler Capstone Design Project</div>
+            <div class="image-container">
+                <img src="waypoint.jpeg" alt="Waypoint Profiler" class="ori">
+            </div>
+            <p>
+                For my senior design project, I collaborated with another mechanical engineering student and two computer 
+                engineering students to develop an underwater robot. Through stakeholder interviews and trade-off analyses, 
+                we prioritized reliability and functionality in the design. We applied DFM principles and FEA simulations to 
+                ensure the robot's ease of manufacture and structural reliability. Adhering to strict safety protocols, we safely 
+                integrated high-capacity electronics, including thrusters and Lithium-ion batteries. We also implemented an assembly 
+                and pre-deployment review process to ensure safe and successful operations. Throughout the project, we maintained 
+                effective communication and co-authored a comprehensive 90+ page report. Our efforts earned us the Best in 
+                Interdisciplinary Session award at the Senior Design Presentations.
+            </p>
+            <p class="centered-link">
+                <a href="https://www.linkedin.com/posts/scu-robotic-systems-lab_waypoint-profiler-capstone-project-wins-interdisciplinary-ugcPost-7199922914370936834-oJEq?utm_source=combined_share_message&utm_medium=member_desktop_web" target="_blank">Watch Video</a>
+            </p>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Robot Manipulator Program for Tool Sorting </div>
+            <div class="image-container">
+                <img src="robotarm.png" alt="Sorting Robot Arm">
+            </div>
+            
+            <p>
+                I designed a tool-sorting system to improve workbench organization for engineers and technicians in a simulated 
+                environment. The project involved programming a robotic arm to sort tools into designated bins. I also developed 
+                a user-friendly interface and implemented a voice control system for intuitive, hands-free operation. This solution 
+                enhanced workspace efficiency and minimized manual effort through seamless user interaction and automated sorting.            
+            </p>
+            <p class="centered-link">
+                <a href="https://www.youtube.com/watch?v=NkmQcJ-MXqo" target="_blank">Watch Video</a>
+            </p>
+            
+        </div>
+
+        <div class="project">
+            <div class="project-title">Angular position control with fan motor</div>
+            <div class="image-container">
+                <img src="LazySusan.png" alt="Observer-Based Compensator Design" class="ori">
+            </div>
+            <p>
+                In this mechatronics project, I implemented PID control to regulate the angular position of the Lazy Susan by adjusting 
+                the motor output effort of the fan motor. I used a variable resistor to measure the system's angle.
+            </p>
+            <p class="centered-link">
+                <a href="https://www.youtube.com/watch?v=8f9eDmYIgb8" target="_blank">Watch Video</a>
+            </p>
+        </div>
+
+
+        <div class="project">
+            <div class="project-title">Marble Maze Arcade Machine</div>
+            <div class="image-container">
+                <img src="marble_maze.png" alt="Observer-Based Compensator Design">
+            </div>
+            <p>
+                In this mechatronics project, I 3D printed the main structure of the machine, including the ball 
+                support joint and the maze. The user can use the joystick to control the orientation of the maze in 
+                order to roll the marble ball from the starting point to the endpoint. We implemented a timing function 
+                and monitor to enhance the user experience.
+            </p>
+            <p class="centered-link">
+                <a href="https://www.youtube.com/watch?v=8f9eDmYIgb8" target="_blank">Watch Video</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="kwang4@scu.edu">kwang4@scu.edu</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kwang04/">https://www.linkedin.com/in/kwang04/</a></p>
+        <p>GitHub: <a href="https://github.com/kevin866">https://github.com/kevin866</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kevin Wang. Built with passion and dedication.</p>
+    </footer>
+</body>
+</html>
